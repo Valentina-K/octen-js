@@ -113,7 +113,7 @@ else if (day >= 11 && day < 21) console.log("2 decade");
 else console.log("3 decade");
 
 /*----------------------- task 9 -------------------------*/
-let choiceDay = 1;
+let choiceDay = '1';
 switch (choiceDay) {
     case '1':
         console.log('todo 1-1');
