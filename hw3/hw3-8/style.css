@@ -1,0 +1,15 @@
+.users-box{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 25px;
+    justify-content: center;
+}
+.user-block{
+    border: 2px solid #031629;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.address-block{
+    transform: translateX(20%);
+}

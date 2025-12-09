@@ -1,0 +1,24 @@
+.section-title{
+    text-transform: uppercase;
+    color: #0b1535;
+    font-weight: 600;
+}
+
+.option{
+    font-size: 20px;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.brown{
+    color: brown;
+}
+
+.list-item{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #636262;
+}

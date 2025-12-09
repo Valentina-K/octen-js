@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.product-card{
+    width: 300px;
+}
+.product-title{
+    text-transform: uppercase;
+    color: orange;
+}
+.product-image{
+    width: 280px;
+}
+
