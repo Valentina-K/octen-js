@@ -9,10 +9,8 @@ sortNums(nums,’ascending’) // [3,11,21]
 sortNums(nums,’descending’) // [21,11,3]*/
 
 function sortNums(array, direction) {
-    let sortedArr = Array.from(array);
-    if(direction === 'ascending') array = sortedArr.sort((a, b) => a-b);
-    else if(direction === 'descending') array = sortedArr.sort((a, b) => b-a);
-    return sortedArr;
+    if(direction === 'ascending') return array.sort((a, b) => a-b);
+    if(direction === 'descending') return array.sort((a, b) => b-a);
 }
 
 let nums = [11,21,3];

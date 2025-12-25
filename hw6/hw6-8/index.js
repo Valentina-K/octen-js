@@ -40,15 +40,8 @@ let coursesAndDurationArray = [
 
 ];
 
-let sortedCourses = coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration);
-console.log(sortedCourses);
+let updatedCourses = coursesAndDurationArray.sort((a, b) => b.monthDuration - a.monthDuration)
+.filter((course) => course.monthDuration > 5)
+.map((course, ind) =>({...course, id: ind + 1}));
 
-let filteredCourses = coursesAndDurationArray.filter((course) => course.monthDuration > 5);
-console.log(filteredCourses);
-
-let updatedCourses = coursesAndDurationArray.map((course, ind) => {
-    return {
-        title: course.title, monthDuration: course.monthDuration, id: ind + 1
-    }
-})
 console.log(updatedCourses);
