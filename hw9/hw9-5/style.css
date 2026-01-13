@@ -8,14 +8,14 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 1600px;
-    padding: 10px;
+    padding: 20px;
     margin: 0 auto;
 }
 
 .item{
     width: 410px;
     height: 280px;
-    padding: 10px;
+    padding: 16px;
     border-radius: 10px;
     border: 2px solid darkgray;
     background: #43e6e1;
@@ -32,6 +32,7 @@
     text-align: center;
     color: #0b1535;
     font-weight: 700;
+    font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
