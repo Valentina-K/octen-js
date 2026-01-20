@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 1200px;
+    height: 96vh;
+    margin: 20px auto;
+}
+
+.list {
+    flex: 1;
+    background: #00000020;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.list li {
+    font-size: 24px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.list li:hover {
+    animation: listTurn 1s ease-in;
+}
+
+.list li:nth-child(odd) {
+    background: #bbf65660;
+}
+
+.list li:nth-child(even) {
+    background: #ffc10760;
+}
+
+.preview {
+    flex: 3;
+    background: #d6636320;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 0.2fr 0.2fr 3.4fr 3.2fr;
+    grid-template-areas:
+    "header header"
+    "ratingInfo ratingInfo"
+    "image container"
+    "footer container";
+    gap: 20px;
+}
+
+.preview h2 {
+    grid-area: header;
+    text-align: center;
+    color: #1e0101;
+    font-size: 36px;
+}
+
+.ratingInfo {
+    grid-area: ratingInfo;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+}
+
+.ratingInfo span {
+    font-weight: 600;
+}
+
+.image {
+    width: 328px;
+    height: 330px;
+    grid-area: image;
+    object-fit: cover;
+    background: #b6b5b5;
+}
+
+.footerInfo {
+    grid-area: footer;
+    font-size: 20px;
+}
+
+.footerInfo span {
+    font-weight: 600;
+}
+
+.container {
+    grid-area: container;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container p{
+    font-size: 24px;
+    font-style: italic;
+}
+
+.container ul {
+    border-radius: 5px;
+    border: 1px solid #00000020;
+    padding: 10px;
+    font-size: 20px;
+    overflow-y: auto;
+}
+
+.container ol {
+    list-style-position: inside;
+    border-radius: 5px;
+    border: 1px solid #00000020;
+    padding: 10px;
+    font-size: 20px;
+    overflow-y: auto;
+}
+
+@keyframes listTurn {
+    from {
+        transform: rotateX(0);
+    }
+    20% {
+        transform: rotateX(45deg);
+    }
+    40%{
+        transform: rotateX(90deg);
+    }
+    60%{
+        transform: rotateX(135deg);
+    }
+    80%{
+        transform: rotateX(180deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
